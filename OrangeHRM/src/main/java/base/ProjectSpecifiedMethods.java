@@ -9,6 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -23,11 +24,13 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
+import sun.text.normalizer.CharTrie.FriendAgent;
 import utils.ReadExcel;
 
 public class ProjectSpecifiedMethods {
 	public static ChromeOptions options;
-	public static ChromeDriver driver;
+//	public static ChromeDriver driver;s
+	public static FirefoxDriver driver;
 	public static ExtentHtmlReporter reporter;
 	public static ExtentReports reports;
 	public String testName, testDescription, testAuthor, testCategory, workBook;
@@ -65,8 +68,10 @@ public class ProjectSpecifiedMethods {
 		options = new ChromeOptions();
 		options.addArguments("--disable-notifications");		
 		options.addArguments("–lang=en");
-		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver83.exe");
-		driver = new ChromeDriver(options);
+		//System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver83.exe");
+		System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver_64 bit.exe");
+		//driver = new ChromeDriver(options);
+		driver = new FirefoxDriver(options);
 		//It's for deleting the snaps folder
 		File snaps = new File("./snaps");
 		FileUtils.deleteDirectory(snaps);
