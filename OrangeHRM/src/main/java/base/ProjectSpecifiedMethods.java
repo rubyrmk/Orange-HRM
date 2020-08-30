@@ -24,7 +24,6 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-import sun.text.normalizer.CharTrie.FriendAgent;
 import utils.ReadExcel;
 
 public class ProjectSpecifiedMethods {
