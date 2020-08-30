@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import base.ProjectSpecifiedMethods;
-
+//Login Page
 public class LoginPage extends ProjectSpecifiedMethods{
 	public LoginPage() {
 		PageFactory.initElements(driver, this);

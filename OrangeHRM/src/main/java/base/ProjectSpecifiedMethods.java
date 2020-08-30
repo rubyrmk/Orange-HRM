@@ -67,6 +67,7 @@ public class ProjectSpecifiedMethods {
 		options.addArguments("–lang=en");
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver83.exe");
 		driver = new ChromeDriver(options);
+		//It's for deleting the snaps folder
 		File snaps = new File("./snaps");
 		FileUtils.deleteDirectory(snaps);
 		driver.manage().window().maximize();
