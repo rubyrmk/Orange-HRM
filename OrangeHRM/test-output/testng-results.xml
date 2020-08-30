@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="30277" started-at="2020-08-26T09:48:40 IST" finished-at="2020-08-26T09:49:10 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="30277" started-at="2020-08-26T09:48:40 IST" finished-at="2020-08-26T09:49:10 IST">
+      <class name="testCases.ApplyLeave">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:testCases.ApplyLeave@48503868]" name="startReport" is-config="true" duration-ms="840" started-at="2020-08-26T09:48:39 IST" finished-at="2020-08-26T09:48:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="getData()[pri:0, instance:testCases.ApplyLeave@48503868]" name="getData" is-config="true" duration-ms="1" started-at="2020-08-26T09:48:40 IST" finished-at="2020-08-26T09:48:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="reportTest()[pri:0, instance:testCases.ApplyLeave@48503868]" name="reportTest" is-config="true" duration-ms="8" started-at="2020-08-26T09:48:40 IST" finished-at="2020-08-26T09:48:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTest -->
+        <test-method status="PASS" signature="startApplication(java.lang.String)[pri:0, instance:testCases.ApplyLeave@48503868]" name="startApplication" is-config="true" duration-ms="14024" started-at="2020-08-26T09:48:40 IST" finished-at="2020-08-26T09:48:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/index.php/auth/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApplication -->
+        <test-method status="PASS" signature="applyLeave()[pri:0, instance:testCases.ApplyLeave@48503868]" name="applyLeave" duration-ms="14965" started-at="2020-08-26T09:48:54 IST" finished-at="2020-08-26T09:49:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyLeave -->
+        <test-method status="PASS" signature="stopApplication()[pri:0, instance:testCases.ApplyLeave@48503868]" name="stopApplication" is-config="true" duration-ms="1216" started-at="2020-08-26T09:49:09 IST" finished-at="2020-08-26T09:49:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopApplication -->
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:testCases.ApplyLeave@48503868]" name="stopReport" is-config="true" duration-ms="442" started-at="2020-08-26T09:49:10 IST" finished-at="2020-08-26T09:49:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReport -->
+      </class> <!-- testCases.ApplyLeave -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

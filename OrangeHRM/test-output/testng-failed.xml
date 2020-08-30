@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/index.php/auth/login"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testCases.AddAttachment">
+        <methods>
+          <include name="startReport"/>
+          <include name="getData"/>
+          <include name="startApplication"/>
+          <include name="reportTest"/>
+          <include name="stopReport"/>
+          <include name="stopApplication"/>
+          <include name="addAttachment"/>
+        </methods>
+      </class> <!-- testCases.AddAttachment -->
+      <class name="testCases.ApplyLeave">
+        <methods>
+          <include name="startReport"/>
+          <include name="getData"/>
+          <include name="startApplication"/>
+          <include name="reportTest"/>
+          <include name="stopReport"/>
+          <include name="stopApplication"/>
+          <include name="applyLeave"/>
+        </methods>
+      </class> <!-- testCases.ApplyLeave -->
+      <class name="testCases.UpdatePersonalDetails">
+        <methods>
+          <include name="startReport"/>
+          <include name="startApplication"/>
+          <include name="reportTest"/>
+          <include name="stopReport"/>
+          <include name="getData"/>
+          <include name="stopApplication"/>
+          <include name="updatePersonalDetails"/>
+        </methods>
+      </class> <!-- testCases.UpdatePersonalDetails -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
