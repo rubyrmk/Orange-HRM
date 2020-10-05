@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="37273" started-at="2020-08-11T19:57:46 IST" finished-at="2020-08-11T19:58:23 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="37273" started-at="2020-08-11T19:57:46 IST" finished-at="2020-08-11T19:58:23 IST">
+      <class name="testCases.SearchVendors">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:testCases.SearchVendors@3fd7a715]" name="startReport" is-config="true" duration-ms="623" started-at="2020-08-11T19:57:45 IST" finished-at="2020-08-11T19:57:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="getWorkbook()[pri:0, instance:testCases.SearchVendors@3fd7a715]" name="getWorkbook" is-config="true" duration-ms="0" started-at="2020-08-11T19:57:46 IST" finished-at="2020-08-11T19:57:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWorkbook -->
+        <test-method status="PASS" signature="reportTest()[pri:0, instance:testCases.SearchVendors@3fd7a715]" name="reportTest" is-config="true" duration-ms="6" started-at="2020-08-11T19:57:46 IST" finished-at="2020-08-11T19:57:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTest -->
+        <test-method status="PASS" signature="startApplication(java.lang.String)[pri:0, instance:testCases.SearchVendors@3fd7a715]" name="startApplication" is-config="true" duration-ms="20238" started-at="2020-08-11T19:57:48 IST" finished-at="2020-08-11T19:58:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://acme-test.uipath.com/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApplication -->
+        <test-method status="PASS" signature="verifySearchVendors(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.SearchVendors@3fd7a715]" name="verifySearchVendors" duration-ms="14703" started-at="2020-08-11T19:58:08 IST" data-provider="sendData" finished-at="2020-08-11T19:58:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kumar.testleaf@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[leaf@12]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[blue lagoon]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[France]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchVendors -->
+        <test-method status="PASS" signature="stopApplication()[pri:0, instance:testCases.SearchVendors@3fd7a715]" name="stopApplication" is-config="true" duration-ms="1" started-at="2020-08-11T19:58:23 IST" finished-at="2020-08-11T19:58:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopApplication -->
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:testCases.SearchVendors@3fd7a715]" name="stopReport" is-config="true" duration-ms="621" started-at="2020-08-11T19:58:23 IST" finished-at="2020-08-11T19:58:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReport -->
+      </class> <!-- testCases.SearchVendors -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

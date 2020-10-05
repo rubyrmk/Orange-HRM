@@ -1,7 +1,10 @@
 package base;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -9,7 +12,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -27,15 +29,17 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import utils.ReadExcel;
 
 public class ProjectSpecifiedMethods {
+	public static Properties prob;
 	public static ChromeOptions options;
-//	public static ChromeDriver driver;s
-	public static FirefoxDriver driver;
+	public static ChromeDriver driver;
 	public static ExtentHtmlReporter reporter;
 	public static ExtentReports reports;
 	public String testName, testDescription, testAuthor, testCategory, workBook;
 	public static ExtentTest test;
 	@BeforeSuite
-	public void startReport() {
+	public void startReport() throws FileNotFoundException, IOException {
+		prob = new Properties();
+		prob.load(new FileInputStream("./src/main/resources/english.properties"));
 		reporter = new ExtentHtmlReporter("./reports/result.html");
 		reporter.setAppendExisting(true);
 		reports = new ExtentReports();
@@ -67,11 +71,8 @@ public class ProjectSpecifiedMethods {
 		options = new ChromeOptions();
 		options.addArguments("--disable-notifications");		
 		options.addArguments("–lang=en");
-		//System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver83.exe");
-		System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver_64 bit.exe");
-		//driver = new ChromeDriver(options);
-		driver = new FirefoxDriver(options);
-		//It's for deleting the snaps folder
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver83.exe");
+		driver = new ChromeDriver(options);
 		File snaps = new File("./snaps");
 		FileUtils.deleteDirectory(snaps);
 		driver.manage().window().maximize();

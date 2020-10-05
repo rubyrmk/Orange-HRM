@@ -73,8 +73,13 @@ public class ApplyLeavePage extends ProjectSpecifiedMethods{
 	@CacheLookup
 	@FindBy(how = How.ID, using = "applyBtn")
 	WebElement applyButton;
-	public ApplyLeavePage clickApplyButton() {
-		applyButton.click();
+	public ApplyLeavePage clickApplyButton() throws IOException {
+		try {
+			applyButton.click();
+			reportStep("Apply button is clicked sucessfully", "pass");
+		} catch (Exception e) {
+			reportStep("Failed to click the Apply button", "fail");
+		}
 		return this;
 	}
 }
